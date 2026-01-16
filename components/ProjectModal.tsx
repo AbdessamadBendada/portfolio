@@ -32,6 +32,7 @@ const ProjectModal = ({ project, closeModal }: Props) => {
             alt={project.title}
             fill
             className="object-cover"
+            unoptimized={project.img.endsWith(".gif")}
           />
         </div>
 

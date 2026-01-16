@@ -28,6 +28,7 @@ const ProjectsGrid = ({ openModal }: Props) => {
             alt={project.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+            unoptimized={project.img.endsWith(".gif")}
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
