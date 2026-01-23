@@ -13,7 +13,7 @@ const Header = () => {
         href="#contact"
         className="px-6 py-2.5 bg-[#ededed] text-black rounded-full font-semibold text-sm hover:bg-accent transition-colors"
       >
-        Hire Me
+        Get A Quote
       </a>
     </header>
   );
