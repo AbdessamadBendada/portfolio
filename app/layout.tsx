@@ -12,6 +12,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Abdessamad BENDADA | Portfolio",
   description: "Creative Developer & UI Designer",
+  icons: {
+    icon: "/abdessamad-headshot.webp",
+  },
 };
 
 export default function RootLayout({
