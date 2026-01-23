@@ -51,7 +51,8 @@ body {
      1. A Radial Gradient to give depth (light on top, dark on bottom)
      2. A very subtle noise image (url)
   */
-  background-image: radial-gradient(circle at 50% 0%, #1e1e24 0%, #0a0a0a 100%),
+  background-image:
+    radial-gradient(circle at 50% 0%, #1e1e24 0%, #0a0a0a 100%),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
 
   background-attachment: fixed; /* Keeps the texture static while scrolling */
@@ -112,4 +113,32 @@ html {
   border-radius: 50%;
   background-color: var(--color-accent);
   box-shadow: 0 0 10px var(--color-accent);
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+
+/* 1. For Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-main); /* Match the body background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Dark Grey handle */
+  border-radius: 20px; /* Roundness */
+  border: 3px solid var(--color-dark-main); /* Creates a "padding" effect around the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent); /* Turns LIME GREEN when you grab it */
+  cursor: pointer;
+}
+
+/* 2. For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #333 var(--color-dark-main);
 }
