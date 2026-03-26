@@ -16,6 +16,7 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import ProjectModal from "@/components/ProjectModal";
 import ClientLogos from "@/components/ClientLogos";
+import Services from "@/components/Services";
 
 export default function Home() {
   // We only need state for the Modal here, because it overlays the whole page
@@ -50,6 +51,7 @@ export default function Home() {
         <IntroCard />
 
         <Ticker />
+        <Services />
 
         <StrategyCard />
 
